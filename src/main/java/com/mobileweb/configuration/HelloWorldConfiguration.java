@@ -11,7 +11,7 @@ import org.springframework.web.servlet.view.JstlView;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.mobiledoc")
+@ComponentScan(basePackages = "com.mobileweb")
 public class HelloWorldConfiguration extends WebMvcConfigurerAdapter{
 	
 	@Override
