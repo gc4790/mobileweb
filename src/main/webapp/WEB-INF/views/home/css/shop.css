@@ -1,0 +1,491 @@
+/* 
+    Document   : shop
+    Created on : Jul 11, 2014, 8:26:23 PM
+    Author     : krishna
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.start{
+    float:left;
+}
+
+.end{
+    float:left;
+}
+.editinfo{
+    width: 58%;
+    margin-right: 2%;
+    position: relative;
+    top: 40px;
+    float: right;
+    background: #919191;
+}
+.txt414{
+    margin-bottom: 10px;
+width: 250px;
+display: block;
+resize: none;
+}
+.txt212{
+    margin-bottom: 10px;
+width: 250px;
+height: 25px;
+}
+.editinfo span{
+    display: block;
+float: left;
+width: 20%;
+font-family: 'Open Sans', sans-serif;
+font-size: 12px;
+font-weight: bolder;
+padding-bottom: 10px;
+}
+
+.menu {
+background: #1B1B1B;
+max-height: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-top: 1%;
+padding-bottom: 1%;
+border-bottom: 4px solid #BC1414;
+}
+.menu a {
+font-size: 16px;
+font-weight: bold;
+color: #BC1414;
+margin-left: 6%;
+margin-bottom: 5px;
+text-decoration: none;
+text-align: center;
+}
+
+.localarea1{
+width: 150px;
+float: left;
+padding-right: 50px;
+}
+.follow{
+    position:relative;
+    width:30%;
+    height:20px;
+    float:right;
+}
+.gobutton80{
+    font-weight: bold;
+    float: right;
+    cursor: pointer;
+   background: none;
+   text-decoration: blink;
+   border: none;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+    font-family:verdana;
+    color: blue;
+}
+.gobutton80:hover{
+    color: black;
+}
+
+.searchapp1 {
+width: 53%;
+padding-top: 2%;
+float: left;
+}
+.topheader1 {
+margin-top: 0px;
+position: fixed;
+width: 100%;
+background-color: #919191;
+}
+.logo1 {
+    width: 225px;
+height: 60px;
+float: left;
+margin-left: 70px;
+padding-top: 15px;
+padding-right: 5%;
+}
+.topheader1 h1 {
+display: block;
+font-size: 2em;
+font-weight: bold;
+color: white;
+}
+.topheader1 span {
+color: #BC1414;
+}
+.gap1 {
+height: 83px;
+}
+.banner1 {
+height: 150px;
+width: 100%;
+overflow: hidden;
+}
+.banner1 img {
+width: 100%;
+cursor: pointer;
+height: 150px;
+overflow: hidden;
+}
+.top-phone13{
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 14%;
+    height:150px;
+}
+.map{
+    float: left;
+    width:50%;
+    height: 400px;
+    background-color: white;
+}
+.map-output{
+    width: 50%;
+    height: 410px;
+    float: left;
+    margin-bottom: 60px;
+}
+.start-shop12{
+float: left;
+width: 48%;
+margin-left: 10px;
+height: 410px;
+}
+.top-phone3 {
+float: left;
+margin-left: 3%;
+margin-top: 10px;
+width: 27%;
+}
+.txt110 {
+float: left;
+margin-top: 3.8px;
+width: 70%;
+padding-top: 1.0%;
+padding-bottom: 1.2%;
+}
+.gobutton110 {
+    border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+width: 95px;
+margin-left: 2%;
+background: #BC1414;
+border: none;
+line-height: 2.3em;
+letter-spacing: 0.15em;
+text-decoration: none;
+font-family: verdana;
+color: white !important;
+color: #575757;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+}
+.gobutton111 {
+    border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+width: 55px;
+margin-left: 2%;
+background: #BC1414;
+border: none;
+line-height: 2.3em;
+letter-spacing: 0.15em;
+text-decoration: none;
+font-family: verdana;
+color: white !important;
+color: #575757;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-bottom-left-radius: 5px 5px;
+}
+.brands {
+margin-left: 5%;
+width: 34%;
+float: left;
+}
+.brands1 {
+margin-left: 2%;
+width: 34%;
+float: left;
+}
+.icon {
+height: 45px;
+margin-right: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+    .wrap{
+		width:100%;
+                overflow:hidden;
+    }
+    .searchapp1{
+        width:47%;
+}
+.txt10{
+width:90%;
+}
+.txt11{
+width:70%;
+}
+.localarea1{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:170px;
+}
+.pic-img-shop{
+    width:25%;
+    padding-right:5%;
+}
+.owner-info{
+    width:60%;
+}
+.mob-brands-shop{
+    height:170px;
+}
+.mob-inside-shop {
+    width:40%;
+}
+.brands-inside-shop{
+    width:60%;
+}
+.brands{
+    width:40%;
+}
+.map-output {
+    width:98%;
+}
+.start-shop12 {
+    width:97%;
+}
+.near-shops1{
+    width:97%;
+}
+.near-shops{
+    width:98%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.top-phone13 {
+    width:13%;
+}
+.top-phone3 {
+    width:26%;
+}
+.right-side1 {
+    margin-left:0%;
+}
+}
+@media only screen and (max-width: 640px) {
+    .wrap{
+		width:100%;
+    }
+     .searchapp1{
+        width:45%;
+}
+.txt10{
+width:90%;
+}
+.txt11{
+width:70%;
+}
+.localarea1{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:170px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:60%;
+}
+.mob-brands-shop{
+    height:205px;
+}
+.mob-inside-shop {
+    width:35%;
+}
+.brands-inside-shop{
+    width:65%;
+}
+.brands{
+    width:45%;
+}
+.map-output {
+    width:98%;
+}
+.start-shop12 {
+    width:100%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.top-phone2{
+    width:27.5%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.top-phone13 {
+    width:26%;
+}
+.top-phone3 {
+    width:26%;
+}
+.right-side1 {
+    margin-left:0%;
+}
+}
+@media only screen and (max-width: 480px) {
+    .wrap{
+		width:100%;
+    }
+    .topheader1{
+        margin-bottom:0%;
+        padding-bottom:0%;
+}
+    .searchapp1{
+        width:70%;
+}
+.txt10{
+width:90%;
+}
+.txt11{
+width:70%;
+}
+.localarea1{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:230px;
+}
+.pic-img-shop{
+    width:30%;
+    padding-right:10%;
+}
+.owner-info{
+    width:60%;
+    height:280px;
+}
+.mob-brands-shop{
+    height:445px;
+}
+.mob-inside-shop {
+    width:90%;
+}
+.brands-inside-shop{
+    width:98%;
+    height:270px;
+}
+.brands{
+    width:45%;
+    height:180px;
+}
+.brands1{
+    width:45%;
+    height:180px;
+}
+.gobutton80{
+    float:left;
+    padding-top:2%;
+}
+.map-output {
+    width:98%;
+}
+.start-shop12 {
+    width:100%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.top-phone2{
+    width:25%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.top-phone13 {
+    width:26%;
+}
+.top-phone3 {
+    width:24%;
+}
+.right-side1 {
+    margin-left:0%;
+}
+}

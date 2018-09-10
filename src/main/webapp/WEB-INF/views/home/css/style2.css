@@ -1,0 +1,353 @@
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 2, 2014, 9:28:40 PM
+    Author     : Krishna
+*/
+
+.sell-phone1{
+    float: left;
+    width: 50%;
+    height: 410px;
+}
+.info1{
+    background: white;
+    width: 100%;
+    height: 410px;
+}
+.random-select-for-individual{
+    width: 100%;
+    height: 230px;
+    padding-bottom: 10px;
+}
+.top-phone0 {
+float: left;
+margin-left: 1%;
+margin-top: 10px;
+width: 14.2%;
+}
+.top-phone101 {
+float: left;
+margin-left: 3%;
+margin-top: 10px;
+width: 28.4%;
+}
+.phone-pic101 {
+width: 90%;
+height: 180px;
+margin-left: auto;
+margin-right: auto;
+}
+.top-phone2{
+    display: block;
+    width: 11.6%;
+    float: left;
+    margin-left: 1.7%;
+}
+.top-phone2 img{
+    max-width: 100%;
+}
+.random-phone-for-individual{
+    width:100%;
+    height:230px;
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+.searchapp{
+    width: 53%;
+    padding-top: 2%;
+    float: left;
+}
+.searchapp12{
+    width: 33%;
+    padding-top: 2%;
+    float: left;
+}
+.gobutton1{
+    border-radius:5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 55px;
+    margin-left: 2%;
+   background: #BC1414;
+   border: none;
+    line-height: 2.3em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    font-family:verdana;
+    color: white !important;
+    color: #575757;
+}
+.txt{
+    width: 30%;
+    height: 30.8px;
+}
+.txt1{
+    float: left;
+    margin-top: 3.8px;
+    width: 45%;
+    height: 25px;
+}
+.gobutton2{
+    border-radius:5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 95px;
+    margin-left: 2%;
+   background: #BC1414;
+   border: none;
+    line-height: 2.3em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    font-family:verdana;
+    color: white !important;
+    color: #575757;
+}
+
+.right-side{
+    padding-top:13%;
+    width:2.5%;
+    margin-right:0.5%;
+    float:right;
+}
+.left-side{
+    padding-top:13%;
+    width:2.5%;
+    float:left;
+    color:black;
+    font-weight:bold;
+    padding-left:1%;
+}
+.left-side1{
+    padding-top:25%;
+    width:2.5%;
+    float:left;
+    padding-left:1%;
+}
+.left-side2{
+    padding-top:5%;
+    width:2.5%;
+    float:left;
+    padding-left:1%;
+}
+.side-buttons {
+background: #EDEFEF;
+border: none;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+}
+.right-side{
+    padding-top:13%;
+    width:2.5%;
+    margin-right:0.5%;
+    float:right;
+}
+.right-side1{
+    margin-right:0.9%;
+    padding-top:25%;
+    width:2.5%;
+    float:right;
+}
+.right-side2{
+    margin-right:0.5%;
+    padding-top:5%;
+    width:2.5%;
+    float:right;
+}
+.top-phone3 {
+float: left;
+margin-left: 3%;
+margin-top: 10px;
+width: 27%;
+height: 350px;
+border: 1px solid black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+    .wrap{
+		width:100%;
+    }
+    .searchapp{
+        width:47%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:170px;
+}
+.pic-img-shop{
+    width:25%;
+}
+.owner-info{
+    width:60%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+}
+@media only screen and (max-width: 640px) {
+    .wrap{
+		width:100%;
+    }
+    .logo{
+        margin-top:5%;
+}
+     .searchapp{
+        width:40%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:170px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:58%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+}
+@media only screen and (max-width: 480px) {
+    .wrap{
+		width:100%;
+    }
+    .logo{
+        margin-top:1%;
+        margin-bottom:0%;
+}
+     .searchapp{
+        width:80%;
+        margin-left:15%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:219px;
+}
+.owner-pic{
+    height:300px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:40%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:30%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.gobutton8{
+    float:left;
+    margin-top:8%;
+}
+}

@@ -1,0 +1,195 @@
+/* 
+    Document   : indivresp
+    Created on : Jul 14, 2014, 7:34:48 PM
+    Author     : krishna
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+@media only screen and (max-width: 720px) {
+    .wrap{
+		width:100%;
+    }
+    .searchapp{
+        width:47%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:180px;
+}
+.owner-pic{
+    height:500px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:60%;
+}
+.searchapp12{
+    width:60%;
+    margin-left:10%;
+    margin-right:30%;
+    margin-bottom:5%;
+}
+.random-phone-for-individual {
+    height:200px;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.top-phone2{
+    width:11.6%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+}
+@media only screen and (max-width: 640px) {
+    .wrap{
+		width:100%;
+    }
+    .logo{
+        margin-top:5%;
+}
+     .searchapp{
+        width:40%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:170px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:58%;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:28%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.random-select-for-individual {
+    height:420px;
+}
+.top-phone2{
+    width:22%;
+    height:200px;
+}
+}
+@media only screen and (max-width: 480px) {
+    .wrap{
+		width:100%;
+    }
+    .logo{
+        margin-top:1%;
+        margin-bottom:0%;
+}
+     .searchapp{
+        width:80%;
+        margin-left:15%;
+}
+.txt1{
+width:90%;
+}
+.txt{
+width:70%;
+}
+.localarea{
+    float:right;
+    padding-top:0%;
+    padding-right:0%;
+}
+.gap1{
+    height:259px;
+}
+.owner-pic{
+    height:520px;
+}
+.pic-img-shop{
+    width:20%;
+}
+.owner-info{
+    width:40%;
+    height:300px;
+}
+.random-select{
+    height:700px;
+}
+.top-phone0{
+    width:30%;
+    margin-bottom:10%;
+}
+.info{
+    width:100%;
+    height:800px;
+}
+.sell-phone{
+    width: 100%;
+}
+.start-shop{
+    width: 98%;
+}
+.gobutton8{
+    float:left;
+    margin-top:8%;
+}
+.random-select-for-individual {
+    height:160px;
+    overflow:hidden;
+}
+.top-phone2{
+    width:26%;
+    height:200px;
+}
+}
+

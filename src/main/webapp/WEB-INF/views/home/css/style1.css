@@ -1,0 +1,528 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 1, 2014, 10:08:52 PM
+    Author     : Krishna
+*/
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.gap6{
+    height: 70px;
+}
+
+.m1{
+    width: 640px;
+    height: 1136px;
+    background-color: bisque;
+}
+.qadbutton{
+    float: right;
+    width: 13%;
+    height: 30px;
+    margin-right: 10px;
+}
+.logo{
+    width: 225px;
+    height: 60px;
+    float:left;
+    margin-left: 70px;
+    padding-top: 15px;
+    padding-right:5%;
+}
+.topheader{
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    background-color: #919191;
+}
+.menu{
+    background: #1B1B1B;
+    max-height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1%;
+    padding-bottom:1%;
+    border-bottom: 4px solid #BC1414;
+}
+.menu a:hover{
+    color: white;
+}
+.menu a{
+    font-family: verdana;
+    font-size: 16px;
+    font-weight: bold;
+    color:#BC1414;
+    margin-left: 6%;
+    margin-bottom: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+.button{
+    width: 100%;
+            padding-left: 10px;
+    display: inline-block;
+    background: #BC1414;
+    border-radius: 5px;
+    line-height: 2.5em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white !important;
+    color: #575757;
+}
+.gobutton{
+    border-radius:5px;
+    float: right;
+    left: 115px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50px;
+   background: #BC1414;
+   border: none;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    font-family:verdana;
+    color: white !important;
+    color: #575757;
+}
+.gobutton8{
+    width:60%;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+   background: none;
+   text-decoration:underline;
+   border: none;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+    font-family:verdana;
+    color: #575757;
+}
+.gobutton818{
+    width:205px;
+    float:right;
+    border:none;
+    font-weight: bold;
+    cursor: pointer;
+   background: none;
+   text-decoration:underline;
+   border: none;
+    line-height: 1.5em;
+    letter-spacing: 0.15em;
+    font-family:verdana;
+    color: #575757;
+}
+.area{
+    float:right;
+}
+.topheader p{
+    color: white;
+}
+.topheader h1{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.localarea{
+    width: 90px;
+    float: left;
+    padding-top:2%;
+    padding-left:6%;
+    padding-right: 40px;
+}
+.topheader span{
+    color: #BC1414;
+}
+body, h1, h2, p, h3, h4, h5, h6,img{
+    margin:0;
+    padding: 0;
+}
+
+
+
+
+.localarea1{
+    position:relative;
+    top:50px;
+    left:10%;
+}
+
+.banner{
+    height: 150px;
+    width: 100%;
+}
+img{
+   max-width:100%;
+   max-height:150px;
+}
+.button1{
+    width: 150px;
+    height: 30px;
+    background: none;
+    color:black;
+    cursor: pointer;
+    font-family: verdana;
+    font-weight: bold;
+    text-decoration: underline;
+    border:none;
+}
+.banner img{
+    width: 100%;
+    cursor: pointer;    
+    height: 750px;
+    overflow: hidden;
+}
+.banner-pic{
+    margin-top: 0px;
+    position: absolute;
+    top:100px;
+    padding-left: 500px;
+    float: left;
+    display: block;
+}
+.banner a{
+    position: absolute;
+    top: 200px;
+    left: 1050px;
+    color:black;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.banner a:hover{
+    color: white;
+}
+.owner-pic{
+    height: 200px;
+}
+.gap{
+    height:115px;
+}
+.gap1{
+    height:90px;
+}
+.owner-pic-img{
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+.owner-info{
+    float: left;
+    width: 40%;
+    height: 200px;
+}
+.pic-img-shop{
+    width:17%;
+    height: 149px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    float: left;
+    padding-right: 90px;
+}
+.pic-img-shop a{
+    color:red;
+    text-decoration: none;
+    float: right;
+}
+.pic-img-shop a:hover{
+    color:black;
+}
+.forspan{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: verdana;
+    float: left;
+    padding-top: 10px;
+    width: 150px;
+}
+.forh3{
+    font-size: 10px;
+    font-weight: bold;
+    font-family: verdana;
+    float: left;
+    padding-top: 12px;
+    width: 150px;
+    display: block;
+}
+.spanh3{
+    width: 100%;
+    height: 40px;
+}
+.random-select{
+    width: 100%;
+    height: 350px;
+    padding-bottom: 10px;
+}
+.random-phone{
+    width:93%;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.top-phone{
+    float: left;
+    margin-left: 1%;
+    margin-top: 10px;
+    width: 14.2%;
+    height:350px;
+    border: 1px solid black;
+}
+.phone-pic{
+    width:93%;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.phone-name{
+    float: left;
+    width: 190px;
+    height: 20px;
+    padding-top: 20px;
+}
+.sort{
+    float:right;
+    margin-right:5%;
+}
+.qview{
+    width: 190px;
+    height: 20px;
+    padding-top: 20px;
+}
+.shop-in-home{
+    width: 100%;
+    height:40px;
+}
+.info{
+    background: white;
+    width: 100%;
+    height: 410px;
+}
+.sell-phone{
+    float: left;
+    width: 50%;
+}
+.sell-phone span{
+    font-family: verdana;
+    font-size: 1em;
+    font-weight: bold;
+    padding-right: 5%;
+    padding-left: 3%;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.start-shop{
+    float: left;
+    width: 48%;
+    margin-left: 10px;
+    margin-bottom:9%;
+}
+.top-phone1{
+    float: left;
+    margin-left: 3%;
+    margin-top: 10px;
+    width: 28.4%;
+    height:350px;
+    border: 1px solid black;
+}
+random-select1{
+    width: 100%;
+    overflow: hidden;
+}
+.random-phone1{
+    height:350px;
+    margin-left:8%;
+}
+.gobutton1{
+    cursor:pointer;
+}
+.naming{
+    width:320px;
+    float:left;
+    margin-left:5%;
+}
+.namingtabarea{
+    width:100%;
+    height:120px;
+}
+
+.button5{
+    width: 60px;
+            padding-left: 10px;
+    display: inline-block;
+    background: #BC1414;
+    border:none;
+    margin-bottom:2%;
+    margin-right:5%;
+    line-height: 2.5em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white !important;
+    color: #575757;
+}
+.button6{
+    width: 30%;
+            padding-left: 10px;
+    display: inline-block;
+    background: #BC1414;
+    border:none;
+    margin-bottom:2%;
+    line-height: 2.5em;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    color: white !important;
+    color: #575757;
+}
+.naming span{
+    font-family:verdana;
+    font-size:84%;
+    font-weight:bold;
+    padding-bottom:10%;
+}
+.include-search{
+    float:left;
+    width:48%;
+    height:100px;
+}
+.search-in-sellsold{
+    width:100%;
+    padding-bottom:10%;
+}
+.txt{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 30px;
+}
+.txt1{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+	.wrap{
+		width:100%;
+	}
+}
+
+@media only screen and (max-width: 820px) {
+
+	.wrap{
+		width:100%;
+	}
+        .qadbutton{
+            width: 80%;
+            float: left;
+        }
+        
+        .button{
+            width: 90%;
+            float: left;
+            text-align: center;
+            margin-left: 30%;
+        }
+ 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 720 PIXELS */
+@media only screen and (max-width: 720px) {
+
+	.wrap{
+		width:100%;
+	}
+        .qadbutton{
+            width: 80%;
+            float: left;
+        }
+        
+        .button{
+            width: 90%;
+            float: left;
+            text-align: center;
+            margin-left: 30%;
+        }
+ 
+}
+
+
+
+
+
+
+/*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
+@media only screen and (max-width: 640px) {
+
+	.wrap{
+		width:100%;
+	}
+        .qadbutton{
+            width: 80%;
+            float: left;
+        }
+        
+        .button{
+            width: 90%;
+            float: left;
+            text-align: center;
+            margin-left: 30%;
+        }
+ 
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+@media only screen and (max-width: 480px) {
+
+	.wrap{
+		width:100%;
+	}
+        .qadbutton{
+            width: 70%;
+            float: left;
+        }
+        
+        .button{
+            width: 100%;
+            float: left;
+        }
+ 
+
+}

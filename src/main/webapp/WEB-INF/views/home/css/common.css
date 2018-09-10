@@ -1,0 +1,179 @@
+/* 
+    Document   : common
+    Created on : Jul 17, 2014, 1:49:16 AM
+    Author     : krishna
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900");
+
+.left-side{
+    padding-top:13%;
+    width:2.5%;
+    float:left;
+    color:black;
+    font-weight:bold;
+    padding-left:1%;
+}
+.autoarea{
+    position: relative;
+    top:20px;
+    width: 60%;
+    float: right;
+}
+.autoarea1{
+    position: relative;
+    top:10px;
+    width: 30%;
+    float: right;
+}
+.left-side1{
+    padding-top:25%;
+    width:2.5%;
+    float:left;
+    padding-left:1%;
+}
+.left-side2{
+    padding-top:5%;
+    width:2.5%;
+    float:left;
+    padding-left:1%;
+}
+.side-buttons {
+background: #EDEFEF;
+border: none;
+font-size: 16px;
+cursor: pointer;
+font-weight: bold;
+}
+.right-side{
+    padding-top:13%;
+    width:2.5%;
+    margin-right:0.5%;
+    float:right;
+}
+.right-side1{
+    margin-right:0.9%;
+    padding-top:25%;
+    width:2.5%;
+    float:right;
+}
+.right-side2{
+    margin-right:0.5%;
+    padding-top:5%;
+    width:2.5%;
+    float:right;
+}
+
+
+.container{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    background: white;
+}
+.span1{
+    font-family:arial;
+    font-weight:bold;
+    font-size:14px;
+    margin-left:70px;
+}
+body{
+    background-color:#F2F1DF;
+    font-family: 'Raleway', sans-serif;
+}
+.sort {
+float: right;
+margin-right: 5%;
+}
+
+
+.phone-name121 {
+float: left;
+width: 100%;
+padding-left: 10%;
+font-family: verdana;
+font-size: 12px;
+height: 20px;
+color: black;
+font-weight: bold;
+padding-top: 20px;
+}
+
+.qview121 {
+width: 190px;
+height: 20px;
+}
+.qview121 span {
+font-size: 12px;
+margin-top: 7px;
+margin-left: 5%;
+float: left;
+font-family: verdana;
+font-weight: bold;
+}
+
+
+.gobutton1212 {
+font-weight: bold;
+float: right;
+cursor: pointer;
+width: 37%;
+background: url(../images/ab.png);
+background-repeat: no-repeat;
+height: 50px;
+text-decoration: blink;
+border: none;
+line-height: 1.5em;
+letter-spacing: 0.15em;
+font-family: verdana;
+color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+   .container{
+        width:80%;
+}
+}
+
+@media only screen and (max-width: 640px) {
+       .container{
+        width:95%;
+        overflow-hidden;
+}
+}
+
+
+@media only screen and (max-width: 480px) {
+       .container{
+        width:90%;
+        overflow-hidden;
+}
+@media only screen and (max-width: 320px) {
+       .container{
+        width:100%;
+        overflow-hidden;
+}
+}

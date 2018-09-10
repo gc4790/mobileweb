@@ -1,0 +1,275 @@
+/* 
+    Document   : style3
+    Created on : Jul 5, 2014, 4:15:57 AM
+    Author     : krishna
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+
+.other{
+    width: 30%;
+    float: right;
+}
+.pic_img{
+    width: 70%;
+    float: left;
+    margin-bottom: 30px;
+}
+.pic_img1{
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+}
+.reele{
+    background: white;
+    width: 100%;
+    height: 150px;
+}
+.pic_prev{
+    width: 40%;
+    float: right;
+    margin-left: 45%;
+}
+#img1{
+    display: none;
+}
+#img2{
+    display: none;
+}
+#img3{
+    display: none;
+}
+#img4{
+    display: none;
+}
+#img5{
+    display: none;
+}
+#img6{
+    display: none;
+}
+.prev_inside{
+    margin-left: 4%;
+    width: 20%;
+    float: left;
+    height: 185px;
+    margin-top: 1%;
+    border:1px solid black;
+}
+.localarea{
+    float: left;
+    top: 0px;
+}
+
+
+.topheader-post{
+    position: relative;
+    margin-top: 0px;
+    width: 100%;
+    height: 115px;
+    background-color: #919191;
+}
+.topheader-post p{
+    color: white;
+}
+.topheader-post h1{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.topheader-post span{
+    color: #BC1414;
+}
+.register{
+    width: 80%;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+.register-form{
+   padding-top: 20px;
+    margin-left: 20% ;
+
+}
+.register span{
+    display: block;
+    float: left;
+    width: 20%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+.txt{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 30px;
+}
+.txt1{
+    margin-bottom: 10px;
+    margin-left: 40%;
+    width: 250px;
+    height: 25px;
+}
+.txt2{
+    margin-bottom: 10px;
+    width: 250px;
+    height: 25px;
+}
+.txt3{
+    margin-bottom: 10px;
+  width: 120px;
+    height: 25px;
+}
+.button2{
+    width:60%;
+    margin-left:10%;
+    border:none;
+    background-color:#BC1414;
+    color:white;
+    font-family:verdana;
+    font-weight:bold;
+    padding: 2% 0% 2% 0%;
+    margin-bottom:20px;
+}
+.l1{
+    padding-right:10%;
+}
+.box-charge{
+    width:80%;
+    margin-left:20%;
+}
+.searchapp {
+width: 53%;
+padding-top: 2%;
+float: left;
+}
+.txt4 {
+float: left;
+margin-top: 3.8px;
+width: 45%;
+height: 25px;
+}
+.txt5 {
+width: 30%;
+height: 30.8px;
+margin-bottom: 0px;
+float: none;
+}
+.gobutton101 {
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+width: 55px;
+margin-left: 2%;
+background: #BC1414;
+border: none;
+line-height: 2.3em;
+letter-spacing: 0.15em;
+text-decoration: none;
+font-family: verdana;
+color: white !important;
+color: #575757;
+}
+.localarea {
+position: relative;
+top: 2%;
+width: 150px;
+float: right;
+}
+.localarea3 {
+position: relative;
+top: 30px;
+margin-right: 6%;
+width: 150px;
+float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 720px) {
+    .register{
+        width:100%;
+    }
+    .register-form{
+   padding-top: 20px;
+    margin-left: 20% ;
+
+}
+.searchapp{
+    display: none;
+}
+.localarea {
+top: 30px;
+}
+.register-form{
+    margin-left: 4%;
+}
+}
+@media only screen and (max-width: 640px) {
+    .register{
+        width:100%;
+    }
+    .register-form{
+   padding-top: 20px;
+    margin-left: 20% ;
+    width:100%;
+}
+.register-form{
+    margin-left: 2%;
+}
+
+.searchapp{
+    display: none;
+}
+.localarea {
+top: 20px;
+}
+.logo{
+    height: 0px;
+}
+}
+@media only screen and (max-width: 480px) {
+    .register{
+        width:100%;
+    }
+    .register-form{
+   padding-top: 20px;
+    margin-left: 20% ;
+    width:100%;
+}
+.register-form{
+    margin-left: 2%;
+}
+
+.searchapp{
+    display: none;
+}
+.logo{
+    height: 0px;
+}
+.localarea {
+top: 0px;
+}
+
+}
