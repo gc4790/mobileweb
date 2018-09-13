@@ -1,11 +1,10 @@
-package com.mobileweb.service;
+package com.mobileweb.dao;
 
 import java.util.List;
 
 import com.mobileweb.model.User;
 
-public interface UserService {
+public interface UserDao {
    void save(User user);
-
    List<User> list();
 }

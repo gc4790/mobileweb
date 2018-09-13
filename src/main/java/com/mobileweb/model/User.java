@@ -1,86 +1,56 @@
 package com.mobileweb.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
+
+
+@Entity
+@Table(name = "TBL_USERS")
 public class User {
 
-	private long id;
-	
-	private String username;
-	
-	private String address;
-	
-	private String email;
-	
-	public User(){
-		id=0;
-	}
-	
-	public User(long id, String username, String address, String email){
-		this.id = id;
-		this.username = username;
-		this.address = address;
-		this.email = email;
-	}
+   @Id
+   @GeneratedValue
+   @Column(name = "USER_ID")
+   private Long id;
 
-	public long getId() {
-		return id;
-	}
+   @Column(name = "USER_NAME")
+   @Size(max = 20, min = 3, message = "{user.name.invalid}")
+   @NotEmpty(message="Please Enter your name")
+   private String name;
 
-	public void setId(long id) {
-		this.id = id;
-	}
+   @Column(name = "USER_EMAIL", unique = true)
+   @Email(message = "{user.email.invalid}")
+   @NotEmpty(message="Please Enter your email")
+   private String email;
 
-	public String getUsername() {
-		return username;
-	}
+   public Long getId() {
+      return id;
+   }
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+   public void setId(Long id) {
+      this.id = id;
+   }
 
-	public String getAddress() {
-		return address;
-	}
+   public String getName() {
+      return name;
+   }
 
-	public void setAddress(String address) {
-		this.address = address;
-	}
+   public void setName(String name) {
+      this.name = name;
+   }
 
-	public String getEmail() {
-		return email;
-	}
+   public String getEmail() {
+      return email;
+   }
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + (int) (id ^ (id >>> 32));
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (!(obj instanceof User))
-			return false;
-		User other = (User) obj;
-		if (id != other.id)
-			return false;
-		return true;
-	}
-
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", address=" + address
-				+ ", email=" + email + "]";
-	}
-	
-
-	
+   public void setEmail(String email) {
+      this.email = email;
+   }
 }
