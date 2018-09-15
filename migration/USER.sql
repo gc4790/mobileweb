@@ -1,8 +1,2 @@
-create table user(USER_ID int AUTO_INCREMENT PRIMARY KEY,
-USER_NAME varchar(100),
-MOBILE_NO INT,
-PASSWORD1 INT,
-EMAIL_ID VARCHAR(100) NOT NULL,
-ADDRESS VARCHAR(100),
-PROFILE_PICTURE VARCHAR(100)
-);
+alter table user Change MOBILE_NO mobile_no varchar(100);
+select * from user;
