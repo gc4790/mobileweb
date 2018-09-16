@@ -23,9 +23,11 @@ angular.module('loginApp').controller('loginController', ['$scope','loginService
 		
 		function loginValidation(){
 			var returnPromise = loginService.validateUser(logCtrl.user);
-			returnPromise.success(function(response){
-				console.log(response);
-			})
+			returnPromise.then(function successCallback(response) {
+			    $scope.employees = response.data.employees;
+			}, function errorCallback(response) {
+			    console.log(response.statusText);
+			});
 		}
 
 }]);
