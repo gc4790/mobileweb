@@ -24,6 +24,24 @@ public class LoginDAO {
 		User u1 = seesion.get(User.class,new Long(1));
 		return u1;
 	}
+    
+	@Transactional
+	public boolean isUserExist(User user) {
+		boolean isValidUser = false;
+		
+		Session seesion = sessionFactory.getCurrentSession();
+		User u1 = seesion.get(User.class,user);
+		if(u1!=null)
+		isValidUser = true;
+		
+		return isValidUser;
+	}
+
+	public User getUser(User user) {
+		Session seesion = sessionFactory.getCurrentSession();
+		User validUser = seesion.get(User.class,user);
+		return validUser;
+	}
 	
 	
 	

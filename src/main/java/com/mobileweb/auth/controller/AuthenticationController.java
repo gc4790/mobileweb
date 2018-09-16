@@ -26,24 +26,19 @@ public class AuthenticationController{
 	@Autowired
 	LoginService loginService;
 	
-	@PostMapping("/validateUser")
+	/*@PostMapping("/validateUser")
 	public User saveUser() {
 		if(loginService.isValidUser("Ganesh")) {
 			return new User();
 		}else {
 			return new User();
 		}
-	}
+	}*/
 	
-	@PostMapping("/validateUser1")
-	public  ResponseEntity<User> saveUser(@RequestBody User paramMap) {
-		if(loginService.isValidUser("Ganesh")) {
-			return new ResponseEntity<User>(paramMap, HttpStatus.OK);
-		}else {
-			User u = new User();
-			u.setName("Ganesh");
-			return new ResponseEntity<User>(u, HttpStatus.OK);
-		}
+	@PostMapping("/validateUser")
+	public  ResponseEntity<User> saveUser(@RequestBody User user) {
+		User usr = loginService.getValidUser(user);
+		return new ResponseEntity<User>(usr,HttpStatus.OK);
 	}
 	
 	@GetMapping("/getUser")

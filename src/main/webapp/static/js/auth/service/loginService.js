@@ -32,7 +32,7 @@ angular.module('loginApp').factory('loginService', ['$http','$q',function loginS
 	function validateUser(user){
 		return  $http({
 			    method:'POST',
-				url:REST_SERVICE_URI+'validateUser1',
+				url:REST_SERVICE_URI+'validateUser',
                 data:user
 			}); 
 		}

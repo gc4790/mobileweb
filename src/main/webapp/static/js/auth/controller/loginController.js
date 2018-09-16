@@ -20,11 +20,12 @@
 angular.module('loginApp').controller('loginController', ['$scope','loginService', function($scope,loginService){
 		var logCtrl = this;
 		logCtrl.validateUser = loginValidation;
+		logCtrl.userData = {}
 		
 		function loginValidation(){
 			var returnPromise = loginService.validateUser(logCtrl.user);
 			returnPromise.then(function successCallback(response) {
-			    $scope.employees = response.data.employees;
+				logCtrl.userData = response.data;
 			}, function errorCallback(response) {
 			    console.log(response.statusText);
 			});
