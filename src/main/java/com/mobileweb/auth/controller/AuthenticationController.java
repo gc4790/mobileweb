@@ -27,19 +27,29 @@ public class AuthenticationController{
 	LoginService loginService;
 	
 	@PostMapping("/validateUser")
-	public User saveUser(@RequestBody User user) {
-		if(loginService.isAuthrizeUser(user)) {
-			return user;
+	public User saveUser() {
+		if(loginService.isValidUser("Ganesh")) {
+			return new User();
 		}else {
-			return user;
+			return new User();
 		}
-		
+	}
+	
+	@PostMapping("/validateUser1")
+	public  ResponseEntity<User> saveUser(@RequestBody User paramMap) {
+		if(loginService.isValidUser("Ganesh")) {
+			return new ResponseEntity<User>(paramMap, HttpStatus.OK);
+		}else {
+			User u = new User();
+			u.setName("Ganesh");
+			return new ResponseEntity<User>(u, HttpStatus.OK);
+		}
 	}
 	
 	@GetMapping("/getUser")
-	public @ResponseBody String getUser() {
+	public @ResponseBody User getUser() {
 		Map<String,Object> u = new HashMap<>();
 		loginService.isValidUser("Ganesh");
-		return "{userName:Ganesh}";
+		return new User();
 	}
 }

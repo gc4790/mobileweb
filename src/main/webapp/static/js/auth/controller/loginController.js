@@ -22,7 +22,10 @@ angular.module('loginApp').controller('loginController', ['$scope','loginService
 		logCtrl.validateUser = loginValidation;
 		
 		function loginValidation(){
-			loginService.validateUser(logCtrl.user)
+			var returnPromise = loginService.validateUser(logCtrl.user);
+			returnPromise.success(function(response){
+				console.log(response);
+			})
 		}
 
 }]);

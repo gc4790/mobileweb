@@ -24,7 +24,7 @@ public class User implements Serializable{
 
    @Id
    @GeneratedValue
-   @Column(name = "USER_ID")
+   @Column(name = "id")
    private Long id;
 
    @Column(name = "uname")
@@ -60,4 +60,20 @@ public class User implements Serializable{
    public void setEmail(String email) {
       this.email = email;
    }
+
+@Override
+public String toString() {
+	StringBuilder builder = new StringBuilder();
+	builder.append(" {id=");
+	builder.append(id);
+	builder.append(", name=");
+	builder.append(name);
+	builder.append(", email=");
+	builder.append(email);
+	builder.append("}");
+	return builder.toString();
+}
+   
+   
+   
 }

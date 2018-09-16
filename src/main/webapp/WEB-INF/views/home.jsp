@@ -11,7 +11,7 @@
 </head>
 <body >
 <div ng-app="loginApp" ng-controller="loginController as logCtrl">
-<input type="text" ng-model = "logCtrl.user.username">
+<input type="text" ng-model = "logCtrl.user.name">
 <button value="Save" ng-click="logCtrl.validateUser()" >Save</button>
 </div>
 </body>
