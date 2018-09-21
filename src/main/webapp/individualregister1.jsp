@@ -9,14 +9,16 @@
          <link href="static/css/style1.css" rel="stylesheet" type="text/css"  media="all" />
          <link href="static/css/style3.css" rel="stylesheet" type="text/css"  media="all" />
          <link href="static/css/common.css" rel="stylesheet" type="text/css"  media="all" />
-          <script src="js/jquery-1.3.2.min.js"></script>
-          <script src="js/validation.js"></script>
+      
           <script src="static/js/angular.min.js"></script>
-<script src="static/js/app.js"></script>
+          <script src="static/js/app.js"></script>
+          <script src="static/js/registration/service/registrationService.js"></script>
+          <script src="static/js/registration/controller/indRegistrationCtrl.js"></script>
+          
         <title>JSP Page</title>
     </head>
     <body>
-        <div class="wrap" ng-app="indvReg" ng-controller="indRegistration as indReg">
+        <div class="wrap" ng-app="indvReg" ng-controller="indRegistrationController as indRegCtrl">
             <div class="topheader-post">
                 <div class="qadbutton">
              <a href="postaquickad.jsp" class="button">Post a Quick Ad</a>
@@ -56,12 +58,11 @@
                          
                         <div class="register-form">
                             <h1>Individual Registration Page</h1><br>
-                            <span> Name :</span> <input type="text" ng-model="name1" ng-minlength="5" name="name1" class="txt2" name="name">
-                            <h5 style="color:red" ng-show="name1.$error.required">Name is required </h5>
-                            <br><br>
-                            <span> Mobile Number :</span> <input type="text"  class="txt2" name="mob" required="required">&nbsp;&nbsp;<span><div id="mob"></div></span><br><br>
-                        <span> Email-id :</span><input type="email" class="txt2" name="email"><br><br>
-                        <span> Fmail-id :</span><input type="text" class="txt2" name="fmail"><br><br>
+                         
+                          <span> Name :</span> <input type="text" ng-model="indRegCtrl.regstrnData.userName" class="txt2" name="name" required="required"><br><br>
+                            <span> Mobile Number :</span> <input type="text"  class="txt2" ng-model="indRegCtrl.regstrnData.mobileNo" name="mob" onkeyup="checkMobile(this);" required="required">&nbsp;&nbsp;<span><div id="mob"></div></span><br><br>
+                        <span> Email-id :</span><input type="email" class="txt2" name="email" required="required"  ng-model="indRegCtrl.regstrnData.emailId"><br><br>
+                        <span> Fmail-id :</span><input type="fmail" class="txt2" name="fmail"><br><br>
                         <span> Password :</span><input id="password" type="password" class="txt2" name="pass" onblur="checkPassword1(this);" required="required"><br><br>
                         <span> Confirm Password :</span> <input id="password1" type="password" class="txt2" name="cpass" onkeyup="checkPassword(this);" required="required" onpaste="return false;"><br>&nbsp;&nbsp;<span><div id="pass" style="color: Red"></div><div id="pass1" style="color: green"></div></span>
                         <span> Address :</span> <br><input type="text" class="txt2" name="location"><br><br>
@@ -89,8 +90,10 @@
                              <span> Location 4 :</span><br><br>
                          </div>
                            
-                        <button ng-disabled="name1.$invalid" name="register" class="button2" ng-click="individualreg()">Register</button>
+                         <input type="submit" id="submit" name="register" value="Register" class="button2" 
+                           ng-click = "indRegCtrl.saveIndividualRegData()" >
                         </div>
+
                        
                         </div>
                          

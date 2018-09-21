@@ -54,9 +54,9 @@
                            <form action="IndividualRegister_2.jsp" method="post" enctype="multipart/form-data">
                         <div class="register-form">
                             <h1>Individual Registration Page</h1><br>
-                            <span> Name :</span> <input type="text" class="txt2" name="name" required="required"><br><br>
-                            <span> Mobile Number :</span> <input type="text"  class="txt2" name="mob" onkeyup="checkMobile(this);" required="required">&nbsp;&nbsp;<span><div id="mob"></div></span><br><br>
-                        <span> Email-id :</span><input type="email" class="txt2" name="email" required="required"><br><br>
+                            <span> Name :</span> <input type="text" ng-model="indReg.regstrnData.name" class="txt2" name="name" required="required"><br><br>
+                            <span> Mobile Number :</span> <input type="text"  class="txt2" ng-model="indReg.regstrnData.mobileNo" name="mob" onkeyup="checkMobile(this);" required="required">&nbsp;&nbsp;<span><div id="mob"></div></span><br><br>
+                        <span> Email-id :</span><input type="email" class="txt2" name="email" required="required"  ng-model="indReg.regstrnData.emailId"><br><br>
                         <span> Fmail-id :</span><input type="fmail" class="txt2" name="fmail"><br><br>
                         <span> Password :</span><input id="password" type="password" class="txt2" name="pass" onblur="checkPassword1(this);" required="required"><br><br>
                         <span> Confirm Password :</span> <input id="password1" type="password" class="txt2" name="cpass" onkeyup="checkPassword(this);" required="required" onpaste="return false;"><br>&nbsp;&nbsp;<span><div id="pass" style="color: Red"></div><div id="pass1" style="color: green"></div></span>
@@ -85,7 +85,8 @@
                              <span> Location 4 :</span><br><br>
                          </div>
                            
-                         <input type="submit" id="submit" name="register" value="Register" class="button2">
+                         <input type="submit" id="submit" name="register" value="Register" class="button2" 
+                           ng-click = "indReg.saveIndividualRegData()" >
                         </div>
                         </form>
                         </div>
