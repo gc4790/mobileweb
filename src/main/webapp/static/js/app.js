@@ -1,9 +1,10 @@
 'use strict';
 
 var App = angular.module('myApp',[]);
-var App1 = angular.module('loginApp',[]);
+var LoginApp = angular.module('loginApp',[]);
+var RegApp=angular.module('indvReg',[]);
 
-App1.config(['$qProvider', function ($qProvider) {
+LoginApp.config(['$qProvider', function ($qProvider) {
     $qProvider.errorOnUnhandledRejections(false);
 }]);
 

@@ -88,13 +88,13 @@
                     <img src="images/facebook.png" id="HTC" class="icon" onclick="browseByBrand(this);">
                     <img src="images/facebook.png" id="LG" class="icon" onclick="browseByBrand(this);">
                 </div>
-                <div ng-app="loginApp" class="login-area" ng-controller="loginController as logCtrl">
+                <div ng-app="loginApp" name="loginapp" class="login-area" ng-controller="loginController as logCtrl">
                     <div class="login-head">
                         SHOP OR INDIVIDUAL LOGIN
                     </div><br><br>
                     <div  id="error" class="errmsg">
 
-                        <span>Invalid Username,Password Combination</span>
+                        <span ng-show="loginapp.$error.required">Invalid Username,Password Combination</span>
 
                     </div>
                        
@@ -118,7 +118,7 @@
                         <form action="shopregister.jsp" method="post"><input type="submit" class="register" name="register" value="Shop Register"></form><br>
                         <a href="forgetpasswd.jsp"  class="forpassw">forgot password?</a>
                             
-                        <a href="individualregister.jsp" class="register">Individual Register</a><br>
+                        <a href="individualregister1.jsp" class="register">Individual Register</a><br>
                         
                         
                     </div>

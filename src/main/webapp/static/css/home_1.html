@@ -79,13 +79,13 @@
                     <img src="images/facebook.png" id="HTC" class="icon" onclick="browseByBrand(this);">
                     <img src="images/facebook.png" id="LG" class="icon" onclick="browseByBrand(this);">
                 </div>
-                <div class="login-area">
+                <div class="login-area" ng-app="">
                     <div class="login-head">
                         SHOP OR INDIVIDUAL LOGIN
                     </div><br><br>
                     <div class="errmsg">
-                        <span>Invalid Username,Password Combination</span></div>
-                    <form action="loginvalidate.jsp" method="post">
+                        <span ng-show="loginvaidate.$error.required"> Invalid Username,Password Combination</span></div>
+                    <form action="loginvalidate.jsp" method="post" name="loginvalidate">
                     <div class="login-textarea">
                         <div class="login-name">Your Name</div>
                         <div class="login-box">
