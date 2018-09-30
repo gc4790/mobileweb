@@ -11,6 +11,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.mobileweb.model.User;
+import com.mobileweb.registration.model.RegistrationDTO;
 
 @Configuration
 @EnableTransactionManagement
@@ -24,7 +25,9 @@ public class HibernateConfig {
 	public LocalSessionFactoryBean getSessionFactory() {
 		LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
 		factoryBean.setConfigLocation(context.getResource("classpath:hibernate.cfg.xml"));
+		
 		factoryBean.setAnnotatedClasses(User.class);
+	//	factoryBean.setAnnotatedClasses(RegistrationDTO.class);
 		return factoryBean;
 	}
 
