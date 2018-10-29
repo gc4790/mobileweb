@@ -47,7 +47,7 @@ public class LoginDAO {
 		if(loggedInUser!=null)
 		isValidUser = true;
 		
-		seesion.close();
+		//seesion.close();
 		
 		return isValidUser;
 	}
@@ -55,7 +55,7 @@ public class LoginDAO {
 	@Transactional
 	public User getUser(User user) {
 		Session seesion = sessionFactory.getCurrentSession();
-		User validUser = seesion.get(User.class,user);
+		User validUser = seesion.get(User.class,user.getId());
 		return validUser;
 	}
 	
