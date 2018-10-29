@@ -62,10 +62,10 @@
                           <span> Name :</span> <input type="text" ng-model="indRegCtrl.regstrnData.userName" class="txt2" name="name" required="required"><br><br>
                             <span> Mobile Number :</span> <input type="text"  class="txt2" ng-model="indRegCtrl.regstrnData.mobileNo" name="mob" onkeyup="checkMobile(this);" required="required">&nbsp;&nbsp;<span><div id="mob"></div></span><br><br>
                         <span> Email-id :</span><input type="email" class="txt2" name="email" required="required"  ng-model="indRegCtrl.regstrnData.emailId"><br><br>
-                        <span> Fmail-id :</span><input type="fmail" class="txt2" name="fmail"><br><br>
-                        <span> Password :</span><input id="password" type="password" class="txt2" name="pass" onblur="checkPassword1(this);" required="required"><br><br>
-                        <span> Confirm Password :</span> <input id="password1" type="password" class="txt2" name="cpass" onkeyup="checkPassword(this);" required="required" onpaste="return false;"><br>&nbsp;&nbsp;<span><div id="pass" style="color: Red"></div><div id="pass1" style="color: green"></div></span>
-                        <span> Address :</span> <br><input type="text" class="txt2" name="location"><br><br>
+                        <span> Fmail-id :</span><input type="fmail" class="txt2" name="fmail" ng-model="indRegCtrl.regstrnData.fmailId"><br><br>
+                        <span> Password :</span><input id="password" type="password" class="txt2" name="pass" ng-model="indRegCtrl.regstrnData.password" required="required"><br><br>
+                        <span> Confirm Password :</span> <input id="password1" type="password" class="txt2" name="cpass" required="required"><br>&nbsp;&nbsp;<span><div id="pass" style="color: Red"></div><div id="pass1" style="color: green"></div></span>
+                        <span> Address :</span> <br><input type="text" class="txt2" name="location" ng-model="indRegCtrl.regstrnData.address"><br><br>
                             <span>Profile Pic :</span><input type="file" name="propic" value="" />
                             
                             <div>    

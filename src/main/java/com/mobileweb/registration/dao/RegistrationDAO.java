@@ -1,5 +1,6 @@
 package com.mobileweb.registration.dao;
 
+
 import javax.transaction.Transactional;
 
 import org.hibernate.Session;
@@ -7,7 +8,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.mobileweb.registration.model.RegistrationDTO;
+import com.mobileweb.registration.dto.RegistrationDTO;
 
 @Repository
 public class RegistrationDAO {
@@ -15,10 +16,14 @@ public class RegistrationDAO {
 	@Autowired
 	private SessionFactory sessionFactory;
 
-	@Transactional
+	@Transactional 
 	public RegistrationDTO saveRegistration(final RegistrationDTO registrationObj) {
 		Session session = sessionFactory.getCurrentSession();
+			
 		session.save(registrationObj);
+		session.flush();
+		session.close();
+		
 		return registrationObj;
 	}
 

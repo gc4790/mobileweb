@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import com.mobileweb.registration.model.RegistrationDTO;
+import com.mobileweb.registration.dto.RegistrationDTO;
 import com.mobileweb.registration.service.RegistrationService;
 
 @Controller

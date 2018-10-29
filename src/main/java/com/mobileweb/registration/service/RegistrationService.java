@@ -1,12 +1,12 @@
 package com.mobileweb.registration.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.stereotype.Service;
 
-import com.mobileweb.model.User;
+
 import com.mobileweb.registration.dao.RegistrationDAO;
-import com.mobileweb.registration.model.RegistrationDTO;
+import com.mobileweb.registration.dto.RegistrationDTO;
 
 @Service
 public class RegistrationService {

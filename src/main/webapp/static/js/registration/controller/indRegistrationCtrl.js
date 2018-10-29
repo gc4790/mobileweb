@@ -1,6 +1,6 @@
 'use strict';
 angular.module('indvReg').controller('indRegistrationController', ['$scope','registrationService', function($scope,registrationService){
-	var indRegCtrl = this;
+	var indRegCtrl = this;  //object created
 	
 	indRegCtrl.regstrnData = {};
 	
